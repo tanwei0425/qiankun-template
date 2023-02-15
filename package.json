@@ -27,16 +27,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@tanwei.github.com:tanwei/react-qiankun-example.git"
+    "url": "git@github.com:tanwei0425/qiankun-react-example.git"
   },
   "keywords": [
     "qiankun",
-    "qiankun-example",
-    "qiankun-demo",
     "react18",
     "vue3",
     "react",
     "vue",
+    "qiankun-example",
+    "qiankun-demo",
     "javascript"
   ],
   "author": "tanwei",
