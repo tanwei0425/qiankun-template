@@ -1,0 +1,15 @@
+
+main/node_modules/
+main/build/
+
+sub-react-app/node_modules/
+sub-react-app/build/
+
+sub-react-app2/node_modules/
+sub-react-app2/build/
+
+sub-vue3-app/node_modules/
+sub-vue3-app/build/
+
+/node_modules
+package-lock.json
