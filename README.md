@@ -1,4 +1,4 @@
-# qiankun-react-example
+# qiankun-template
 
 一个可用于生产环境的基于react18+vue3+qiankun2的微前端模版，父应用 react18，子应用使用 `react18`, `vue3`，一键安装所有主子应用的依赖，一键启动，一键打包并压缩zip。
 
