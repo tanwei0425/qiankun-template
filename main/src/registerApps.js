@@ -32,7 +32,7 @@ registerMicroApps(
         beforeLoad: () => {
             console.log('加载前')
         },
-        beforeMount: (a) => {
+        beforeMount: () => {
             console.log('挂在前')
         },
         afterMount: () => {
