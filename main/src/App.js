@@ -6,9 +6,9 @@
  * @LastEditTime: 2021-03-07 14:31:32
  * @FilePath: /open-platform/src/App.tsx
  */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu } from 'antd'
 const items = [
   {
@@ -28,13 +28,14 @@ const items = [
   },
 ];
 const App = () => {
-  const [current, setCurrent] = useState('');
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const [current, setCurrent] = useState('');
+  useEffect(() => setCurrent(pathname), [pathname])
   const onClick = (e) => {
     setCurrent(e.key);
     navigate(e.key)
   };
-
   return <>
     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
     <div id="container"></div>

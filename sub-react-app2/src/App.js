@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          react子应用2
+          react子应用22
         </p>
       </header>
     </div>

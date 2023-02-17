@@ -32,7 +32,7 @@ registerMicroApps(
         beforeLoad: () => {
             console.log('加载前')
         },
-        beforeMount: () => {
+        beforeMount: (a) => {
             console.log('挂在前')
         },
         afterMount: () => {
@@ -50,6 +50,7 @@ registerMicroApps(
 
 // 设置主应用启动后默认进入的微应用。
 setDefaultMountApp('/sub-react-app2');
+
 // ----- Step3 启动应用
 start();
 

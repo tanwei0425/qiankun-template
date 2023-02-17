@@ -8,10 +8,11 @@ const { override, overrideDevServer, addWebpackAlias, watchAll } = require("cust
  * @returns 
  */
 const addDevServerConfig = () => (config) => {
-    config.headers = config.headers || {}
-    config.headers['Access-Control-Allow-Origin'] = '*';
+    config.headers = {
+        'Access-Control-Allow-Origin': '*',
+    };
     config.historyApiFallback = true;
-    config.hot = false;
+    // config.hot = false;
     // CRA 实现指定了 env.PORT || 3000 端口，customize-cra 无法修改port 无能为力,open同上
     // config.port = 3001;
     // config.open = false;
